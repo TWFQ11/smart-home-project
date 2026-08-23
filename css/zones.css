@@ -1,0 +1,73 @@
+/*ZONES PAGE */
+.zones-page {
+    min-height: calc(100vh - 100px);
+    padding: 90px 8%;
+    text-align: center;
+    background: #F3E3C3;
+}
+/*PAGE TITLE*/
+.page-title p {
+    color: #D99A2B;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+.page-title h1 {
+    margin: 10px 0;
+    font-size: 50px;
+    color: #C65D32;
+}
+.page-title h2 {
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: normal;
+}
+/*ZONE CARDS*/
+.zone-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.zone-card {
+    overflow: hidden;
+    background: #A9472B;
+    border: 1px solid #C65D32;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.zone-card:hover {
+    transform: translateY(-8px);
+    background: #6B3E2E;
+}
+/*CARD IMAGE */
+.zone-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+/*CARD CONTENT*/
+.zone-content {
+    padding: 30px 20px;
+}
+.zone-content h3 {
+    margin-bottom: 15px;
+}
+.zone-content p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #D8B887;
+}
+.zone-content .button {
+    padding: 10px 25px;
+}
+/*MOBILE*/
+@media (max-width: 800px) {
+    .zone-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 700px) {
+    .page-title h1 {
+        font-size: 40px;
+    }
+}

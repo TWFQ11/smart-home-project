@@ -1,0 +1,67 @@
+/*LIVING ROOM PAGE*/
+.room-page {
+    min-height: calc(100vh - 100px);
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: #F3E3C3;
+}
+/*IMAGE*/
+
+.room-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #C65D32;
+}
+/*INFORMATION*/
+.room-info .small-title {
+    color: #C65D32;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+.room-info h1 {
+    margin: 12px 0 20px;
+    font-size: 55px;
+    color: #C65D32;
+}
+.description {
+    max-width: 550px;
+    line-height: 1.8;
+    color: #C65D32;
+}
+/*FEATURES*/
+.features {
+    margin: 35px 0;
+    display: grid;
+    gap: 15px;
+}
+.feature {
+    padding: 20px;
+    background: #A9472B;
+    border-left: 3px solid #D99A2B;
+    border-radius: 5px;
+}
+.feature h3 {
+    margin-bottom: 8px;
+}
+.feature p {
+    color: #D8B887;
+}
+/*MOBILE*/
+
+@media (max-width: 800px) {
+    .room-page {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .room-image img {
+        height: 350px;
+    }
+    .room-info h1 {
+        font-size: 42px;
+    }
+}

@@ -1,0 +1,37 @@
+/*HOME PAGE */
+.hero {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 8%;
+    background: #F3E3C3;
+}
+.hero-content p {
+    color: #D99A2B;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+.hero h1 {
+    font-size: 70px;
+    margin: 15px 0;
+    color: #C65D32;
+}
+.hero h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.hero .button {
+    margin-top: 35px;
+}
+/*MOBILE*/
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 45px;
+    }
+    .hero-content p {
+        font-size: 11px;
+    }
+}
